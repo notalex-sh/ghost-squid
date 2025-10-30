@@ -153,8 +153,8 @@ class GitHubAPI:
         return self.request("GET", f"/users/{username}")
 
 def random_name() -> str:
-    first = ["John", "Joe", ]
-    last = ["Doe", "Bloggs", ]
+    first = ["John", "Joe", "Fred"]
+    last = ["Doe", "Bloggs", "Nurk", "Public"]
     return f"{random.choice(first)} {random.choice(last)}"
 
 def random_date(days: int = 30) -> str:
